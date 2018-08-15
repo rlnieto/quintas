@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+  <canvas id="acorde1" width="500" height="300"></canvas>
+  <canvas id="acorde2" width="500" height="300"></canvas>
+</body>
+
+
+<script>
+  // Re mayor
+  var cuerdas = [1, 2, 3];
+  var trastes = [2, 3, 2];
+  dibujarTablatura('acorde1', 50, 50, 150, cuerdas, trastes);
+
+  // Mi mayor
+  var cuerdas = [3, 4, 5];
+  var trastes = [1, 2, 2];
+  dibujarTablatura('acorde2', 50, 50, 150, cuerdas, trastes);
+
+
+  /*
+  Dibuja una tablatura de 6x6
+  Entrada:
+  - Nombre del canvas sobre el que dibujar
+  - Coordenada X
+  - Coordenada Y
+  - Lado
+
+  */
+  function dibujarTablatura(nombreCanvas, origenX, origenY, lado, cuerdas, trastes) {
+    var canvas = document.getElementById(nombreCanvas);
+    context = canvas.getContext('2d');
+
+    var step = lado / 5;
+    var finX = origenX + lado;
+    var finY = origenY + lado;
+
+    context.beginPath();
+    context.moveTo(origenX, origenY);
+
+    context.strokeRect(origenX, origenY, lado, lado);
+
+    context.lineTo(finX, origenY);
+    context.lineTo(finX, finY);
+    context.lineTo(origenX, finY);
+    context.lineTo(origenX, origenY);
+
+    // Verticales
+    context.moveTo(origenX + step, origenY);
+    context.lineTo(origenX + step, finY);
+    context.moveTo(origenX + (2 * step), origenY);
+    context.lineTo(origenX + (2 * step), finY);
+    context.moveTo(origenX + (3 * step), origenY);
+    context.lineTo(origenX + (3 * step), finY);
+    context.moveTo(origenX + (4 * step), origenY);
+    context.lineTo(origenX + (4 * step), finY);
+
+    // Horizontales
+    context.moveTo(origenX, origenY + step);
+    context.lineTo(finX, origenY + step);
+    context.moveTo(origenX, origenY + (2 * step));
+    context.lineTo(finX, origenY + (2 * step));
+    context.moveTo(origenX, origenY + (3 * step));
+    context.lineTo(finX, origenY + (3 * step));
+    context.moveTo(origenX, origenY + (4 * step));
+    context.lineTo(finX, origenY + (4 * step));
+
+    context.stroke();
+
+    context.beginPath();
+
+    var centerX = canvas.width / 2;
+    var centerY = canvas.height / 2;
+    var radius = 10;
+
+    // El arco no empieza a dibujarse desde el centro...
+    context.moveTo(centerX + radius, centerY);
+    context.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+
+    numPuntos = cuerdas.length;
+    for (i = 0; i < numPuntos; i++) {
+      coordenadaXPunto = ((6 - cuerdas[i]) * step) + origenX;
+      coordenadaYPunto = ((trastes[i] - 1) * step) + origenY + (step / 2);
+
+      context.moveTo(coordenadaXPunto, coordenadaYPunto);
+      context.arc(coordenadaXPunto, coordenadaYPunto, radius, 0, 2 * Math.PI);
+    }
+
+    context.fill();
+
+
+  }
+
+
+  function dibujarTablatura_original(nombreCanvas, origenX, origenY, lado) {
+    var canvas = document.getElementById('exampleCanvas');
+    context = canvas.getContext('2d');
+
+    var step = lado / 5;
+    var finX = origenX + lado;
+    var finY = origenY + lado;
+
+    context.beginPath();
+    context.moveTo(origenX, origenY);
+
+    //context.fillStyle = 'yellow';
+    context.strokeRect(origenX, origenY, lado, lado);
+
+    context.lineTo(finX, origenY);
+    context.lineTo(finX, finY);
+    context.lineTo(origenX, finY);
+    context.lineTo(origenX, origenY);
+
+    // Verticales
+    context.moveTo(origenX + step, origenY);
+    context.lineTo(origenX + step, finY);
+    context.moveTo(origenX + (2 * step), origenY);
+    context.lineTo(origenX + (2 * step), finY);
+    context.moveTo(origenX + (3 * step), origenY);
+    context.lineTo(origenX + (3 * step), finY);
+    context.moveTo(origenX + (4 * step), origenY);
+    context.lineTo(origenX + (4 * step), finY);
+
+    // Horizontales
+    context.moveTo(origenX, origenY + step);
+    context.lineTo(finX, origenY + step);
+    context.moveTo(origenX, origenY + (2 * step));
+    context.lineTo(finX, origenY + (2 * step));
+    context.moveTo(origenX, origenY + (3 * step));
+    context.lineTo(finX, origenY + (3 * step));
+    context.moveTo(origenX, origenY + (4 * step));
+    context.lineTo(finX, origenY + (4 * step));
+
+    var centerX = canvas.width / 2;
+    var centerY = canvas.height / 2;
+    var radius = 10;
+
+    // El arco no empieza a dibujarse desde el centro...
+    context.moveTo(centerX + radius, centerY);
+    context.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+
+    context.stroke();
+
+
+  }
+</script>
+
+</html>

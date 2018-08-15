@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Círculo de quintas</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <button id="button">Quintas</button>
+  <div id="container_inferior">
+    <img src="images/circle_of_fifths.jpg" />
+  </div>
+  <div id="container">
+    <img src="images/circulo_superior.png" id="image" />
+  </div>
+
+  <script>
+    var angle = 0;
+    var img = document.getElementById('container');
+
+    document.getElementById('button').onclick = function() {
+      angle = (angle + 30) % 360;
+      img.className = "rotate" + angle;
+
+   }
+  </script>
+
+</body>
+</html>

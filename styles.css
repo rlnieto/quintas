@@ -1,0 +1,84 @@
+#container {
+  position: absolute;
+  top:50;
+  left:0;
+  width: 300px;
+  height: 300px;
+  /*overflow: hidden;*/
+}
+
+#container_inferior {
+  position: absolute;
+  top:50;
+  left:0;
+  width: 300px;
+  height: 300px;
+  /*overflow: hidden;*/
+}
+
+
+#container.rotate30 #image {
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+}
+
+#container.rotate60 #image {
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+}
+
+#container.rotate90 #image {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+
+#container.rotate120 #image {
+  transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+}
+
+#container.rotate150 #image {
+  transform: rotate(150deg);
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+}
+
+#container.rotate180 #image {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+#container.rotate210 #image {
+  transform: rotate(210deg);
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+}
+
+#container.rotate240 #image {
+  transform: rotate(240deg);
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+}
+
+#container.rotate270 #image {
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+}
+
+#container.rotate300 #image {
+  transform: rotate(300deg);
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+}
+
+#container.rotate330 #image {
+  transform: rotate(330deg);
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+}
