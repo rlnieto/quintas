@@ -1,0 +1,8 @@
+{
+  "name": "Círculo de quintas",
+  "short_name": "Quintas",
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#e05a47",
+  "theme_color": "#e05a47",
+  "display": "standalone"
+}
