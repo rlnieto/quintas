@@ -2,8 +2,8 @@
   position: absolute;
   top:50;
   left:0;
-  width: 300px;
-  height: 300px;
+  width: 90%;
+  height: 90%;
   /*overflow: hidden;*/
 }
 
@@ -11,13 +11,19 @@
   position: absolute;
   top:50;
   left:0;
-  width: 300px;
-  height: 300px;
+  width: 90%;
+  height: 90%;
   /*overflow: hidden;*/
 }
 
+#imagen_inferior,
+#imagen_superior{
+    max-width: 99%;
+    top:0;
+    left:0;
+}
 
-#container_superior.rotate30 #image {
+#container_superior.rotate30 #imagen_superior {
   transform: rotate(30deg);
   -webkit-transform: rotate(30deg);
   -ms-transform: rotate(30deg);
