@@ -1,13 +1,4 @@
-#container_colores {
-  position: absolute;
-  top:50;
-  left:0;
-  width: 300px;
-  height: 300px;
-  /*overflow: hidden;*/
-}
-
-#container {
+#container_superior {
   position: absolute;
   top:50;
   left:0;
@@ -26,67 +17,67 @@
 }
 
 
-#container_inferior.rotate30 #image {
+#container_superior.rotate30 #image {
   transform: rotate(30deg);
   -webkit-transform: rotate(30deg);
   -ms-transform: rotate(30deg);
 }
 
-#container_inferior.rotate60 #image {
+#container_superior.rotate60 #image {
   transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
   -ms-transform: rotate(60deg);
 }
 
-#container_inferior.rotate90 #image {
+#container_superior.rotate90 #image {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
 }
 
-#container_inferior.rotate120 #image {
+#container_superior.rotate120 #image {
   transform: rotate(120deg);
   -webkit-transform: rotate(120deg);
   -ms-transform: rotate(120deg);
 }
 
-#container_inferior.rotate150 #image {
+#container_superior.rotate150 #image {
   transform: rotate(150deg);
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
 }
 
-#container_inferior.rotate180 #image {
+#container_superior.rotate180 #image {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
 }
 
-#container_inferior.rotate210 #image {
+#container_superior.rotate210 #image {
   transform: rotate(210deg);
   -webkit-transform: rotate(210deg);
   -ms-transform: rotate(210deg);
 }
 
-#container_inferior.rotate240 #image {
+#container_superior.rotate240 #image {
   transform: rotate(240deg);
   -webkit-transform: rotate(240deg);
   -ms-transform: rotate(240deg);
 }
 
-#container_inferior.rotate270 #image {
+#container_superior.rotate270 #image {
   transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
 }
 
-#container_inferior.rotate300 #image {
+#container_superior.rotate300 #image {
   transform: rotate(300deg);
   -webkit-transform: rotate(300deg);
   -ms-transform: rotate(300deg);
 }
 
-#container_inferior.rotate330 #image {
+#container_superior.rotate330 #image {
   transform: rotate(330deg);
   -webkit-transform: rotate(330deg);
   -ms-transform: rotate(330deg);

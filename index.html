@@ -10,19 +10,16 @@
 <body>
 
   <button id="button">Quintas</button>
-  <div id="container_colores">
-    <img src="images/imagen_colores.png"  />
-  </div>
   <div id="container_inferior">
-    <img src="images/circle_of_fifths.png" id="image"  />
+    <img src="images/circulo_inferior.png" />
   </div>
-  <div id="container">
-    <img src="images/circulo_superior.png" />
+  <div id="container_superior">
+    <img src="images/circulo_superior.png" id="image" />
   </div>
 
   <script>
     var angle = 0;
-    var img = document.getElementById('container_inferior');
+    var img = document.getElementById('container_superior');
 
     document.getElementById('button').onclick = function() {
       console.log(img);
